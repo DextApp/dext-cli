@@ -1,0 +1,32 @@
+{
+  "name": "dext-cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./cli.js",
+  "scripts": {
+    "lint": "eslint app"
+  },
+  "bin": {
+    "dpm": "./cli.js"
+  },
+  "author": "Vu Tran <vu@vu-tran.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vutran/dext"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "args": "^2.0.0",
+    "conf": "^0.11.2",
+    "download": "^5.0.2",
+    "npm-name": "^3.0.0",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.2.0"
+  }
+}
