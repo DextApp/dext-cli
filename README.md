@@ -1,4 +1,4 @@
-# Dext CLI
+# Dext Package Manager (dpm)
 
 > [Dext](https://github.com/vutran/dext) command-line interface tool.
 
