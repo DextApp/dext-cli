@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-$ dpm install -g dext-cli
+$ npm install -g dext-cli
 ```
 
 *Requires [Dext](https://github.com/vutran/dext).*
