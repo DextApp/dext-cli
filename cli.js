@@ -2,7 +2,7 @@
 
 const args = require('args');
 const chalk = require('chalk');
-const api = require('./api');
+const { api } = require('dext-core-utils');
 
 args.command(['install', 'i'], 'Install a new plugin or theme', (name, sub) => {
   const plugin = sub[0];
