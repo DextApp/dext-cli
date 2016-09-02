@@ -12,7 +12,7 @@
   "author": "Vu Tran <vu@vu-tran.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vutran/dext"
+    "url": "https://github.com/vutran/dext-cli"
   },
   "license": "MIT",
   "dependencies": {
