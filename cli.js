@@ -44,6 +44,12 @@ args.command(['unlink'], 'Removes the symlink for the current plugin.', () => {
     .catch(err => console.error(chalk.red(err)));
 });
 
+args.command(['config'], 'Display the raw config.', () => api.getConfig()
+  .then(data => {
+    console.log(chalk.green(JSON.stringify(data, null, 2)));
+  })
+  .catch(err => console.error(chalk.red(err))));
+
 const flags = args.parse(process.argv);
 
 if (Object.keys(flags).length !== 0) {
