@@ -28,6 +28,7 @@ $ dpm theme dext-my-theme
 ## Related
 
 - [dext](https://github.com/vutran/dext) - The Dext smart launcher
+- [dext-core-utils](https://github.com/vutran/dext-core-utils) - Utility modules shared between Dext and Dext Package Manager.
 
 ## License
 
