@@ -6,6 +6,37 @@ const chalk = require('chalk');
 const ora = require('ora');
 const { api, utils } = require('dext-core-utils');
 
+args.command(['search', 's'], 'Seach for plugins or themes.', (name, sub) => {
+  const searchTerm = sub[0];
+  if (!searchTerm) {
+    console.log(chalk.yellow('Search must be called with an search term'));
+    return;
+  }
+
+  const spinner = ora(chalk.green(`Searching for "${searchTerm}"...`)).start();
+  return api.search(searchTerm)
+    .then((results) => {
+      spinner.color = 'green';
+      spinner.text = chalk.green(`Results for "${searchTerm}":`);
+      spinner.succeed();
+
+      let resultsMessage;
+      if (results.length) {
+        resultsMessage = results.reduce((prev, result) =>
+          `${prev}- ${result.name}: ${result.desc}\n`, ''
+        );
+      } else {
+        resultsMessage = chalk.yellow('no packages found');
+      }
+      console.log(resultsMessage);
+    })
+    .catch((err) => {
+      spinner.color = 'red';
+      spinner.text = chalk.red(err);
+      spinner.fail();
+    });
+});
+
 args.command(['install', 'i'], 'Install a new plugin or theme.', (name, sub) => {
   const plugin = sub[0];
   const spinner = ora(chalk.green(`${plugin} : Installing...`)).start();
