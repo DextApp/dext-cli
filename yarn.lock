@@ -254,9 +254,9 @@ deep-extend@~0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
 
-dext-core-utils@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/dext-core-utils/-/dext-core-utils-0.5.1.tgz#99034c0b80e44813a8cc6ba8039775fdbabb4fa4"
+dext-core-utils@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/dext-core-utils/-/dext-core-utils-0.6.0.tgz#1bd1b0c807c34bdcce6e293370a89ce3520603ac"
   dependencies:
     conf "^0.11.2"
     cross-spawn "^4.0.2"
