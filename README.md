@@ -26,6 +26,15 @@ $ dpm uninstall dext-my-plugin
 
 # sets a new theme
 $ dpm theme dext-my-theme
+
+# search for a plugin/theme
+$ dpm search github
+
+# creates a symlink (current directory) to dext plugin directory (for development)
+$ dpm link
+
+# unlinks the current directory
+$ dpm unlink
 ```
 
 ## Related
